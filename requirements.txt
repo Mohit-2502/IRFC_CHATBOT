@@ -1,0 +1,11 @@
+Flask
+Flask-CORS
+python-dotenv
+llama-index
+llama-index-llms-google-genai
+llama-index-embeddings-huggingface
+llama-parse
+llama-index-core
+llama-index-retrievers-bm25 # For BM25Retriever
+nest_asyncio
+google-generativeai

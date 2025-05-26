@@ -1,0 +1,43 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.egg-info/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# VSCode settings (optional)
+.vscode/
+
+# Node/Bun (if used globally by mistake)
+node_modules/
+bun.lockb
+
+# General lock files
+*.lock
+
+# Output/build folders (in case accidentally created)
+dist/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Storage
+storage/
