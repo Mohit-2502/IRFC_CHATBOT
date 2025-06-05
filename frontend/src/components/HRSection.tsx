@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ChatMessage from './ChatMessage';
 import ChatOptions from './ChatOptions';
@@ -22,7 +21,7 @@ const HRSection: React.FC<HRSectionProps> = ({
       </div>
       
       {messages.length > 0 && (
-        <div className="space-y-3 px-4 mt-4">
+        <div className="space-y-4 px-4 mt-4">
           {messages.map(message => (
             <ChatMessage 
               key={message.id} 

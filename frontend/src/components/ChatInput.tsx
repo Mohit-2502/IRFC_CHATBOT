@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -30,11 +29,11 @@ const ChatInput = ({
           value={inputText} 
           onChange={e => setInputText(e.target.value)} 
           placeholder="Ask me anything..." 
-          className="w-full p-3 pr-12 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+          className="w-full p-3 pr-12 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-[#1a2e5b] focus:border-transparent"
         />
         <button 
           type="submit" 
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#2a427a] to-[#1a2e5b] hover:from-[#1a2e5b] hover:to-[#2a427a] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
         >
           <Send className="h-4 w-4 text-white" />
         </button>

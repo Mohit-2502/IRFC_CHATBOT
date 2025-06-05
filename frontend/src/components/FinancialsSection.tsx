@@ -61,7 +61,7 @@ const FinancialsSection: React.FC<FinancialsSectionProps> = ({
       <h2 className="text-xl font-bold text-center mb-6">How can I help with your financial queries?</h2>
       
       {messages.length > 0 ? (
-        <div className="flex-1 overflow-y-auto space-y-3 mb-4 pr-4">
+        <div className="flex-1 overflow-y-auto space-y-3 mb-3">
           {messages.map(message => (
             <ChatMessage 
               key={message.id} 
@@ -88,14 +88,11 @@ const FinancialsSection: React.FC<FinancialsSectionProps> = ({
               placeholder="Ask a question..." 
               className="py-6 pr-12 pl-4 text-base" // Ensure padding accommodates text size and send button
             />
-            <button 
+            <button
               type="submit"
-              disabled={!financialDocument.trim()} // Optionally disable if input is empty
               className={cn(
                 "absolute right-2 top-1/2 transform -translate-y-1/2 w-9 h-9 rounded-md flex items-center justify-center transition-all duration-200",
-                financialDocument.trim() 
-                  ? "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700" 
-                  : "bg-gray-300 cursor-not-allowed" // Style for disabled state
+                "bg-gradient-to-r from-[#2a427a] to-[#1a2e5b] hover:from-[#1a2e5b] hover:to-[#2a427a]"
               )}
             >
               <Send className="h-4 w-4 text-white" />
